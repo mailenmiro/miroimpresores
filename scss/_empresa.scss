@@ -1,0 +1,59 @@
+/*empresa*/
+#empresa{
+	background-image: url(../imagenes/empresa.jpg);
+}
+
+#empresa #presentacion{
+	font-size: 18px;
+	text-align: center;
+	line-height: 1.6;
+	font-weight: 500;
+}
+
+#empresa #presentacion2{
+	padding-left: 350px;
+	padding-right: 350px;
+	text-align: center;
+	line-height: 1.6;
+	margin-bottom: 20px;
+	font-weight: 400;
+}
+
+#objetivos{
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+#objetivos #buscamos{
+	width: 100%;
+	text-align: center;
+	font-weight: 500;
+	text-transform: uppercase;
+	font-size: 20px;
+}
+
+#objetivos .nos{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: flex-start;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+#objetivos .nos article{
+	padding-top: 30px;
+	width: 300px;
+}
+
+#objetivos h4{
+	padding-bottom: 1rem;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+#objetivos p{
+	color: #616A6B;
+	font-weight: 300;
+}

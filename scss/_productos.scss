@@ -1,0 +1,20 @@
+/*productos*/
+#productosP{
+	background-color: #F8F9F9;
+	padding-bottom: 80px;
+}
+
+#productosP img{
+	height: 300px;
+}
+
+#productosP div{
+	padding-top: 30px;
+	display: grid;
+	grid-template-columns: 300px 300px 300px 300px;
+	grid-template-rows: 300px;
+	grid-column-gap: 10px;
+	grid-row-gap: 10px;
+	justify-content: center;
+	align-content: center;
+}

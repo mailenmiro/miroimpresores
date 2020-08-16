@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Presupuesto</title>
+	<link rel="stylesheet" type="text/css" href="css/estilosCSS.css">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link rel="stylesheet" href="css/bootstrap.min.css"/>
+</head>
+<body>
+	<header id="header1">
+			<article>
+				<a href="index.html"><img src="imagenes/miro.png" alt="logo_miro"></a>	
+			</article>
+			<article>
+				<nav>
+					<a href="index.html">Inicio</a>
+					<a href="empresa.html">Empresa</a>
+					<a href="servicios.html">Servicios</a>
+					<a href="productos.html">Productos</a>
+					<a href="contacto.html">Contacto</a>
+					<a class="activo" href="presupuesto.html"target="_blank">Presupuesto</a>
+				</nav>
+			</article>	
+	</header>
+	<section id="presupuesto">
+		<h2 id="tituloPaginas">Pedinos tu presupuesto</h2>
+			<article class="container">
+			<article class="row">
+				<div class="col-md-4">
+					<h3>Datos Personales</h3>
+						<form>
+							<div class="form-group">
+								<label for="text">Nombre Completo</label>
+								<input type="text" name="nombre" class="form-control" placeholder="Nombre Apellido">
+							</div>
+							<div class="form-group">
+								<label for="exampleInputEmail1">Email</label>
+								<input type="email" name="ejemplo_mail" class="form-control" aria-describedby="emailHelp" placeholder="nombre@gmail.com">
+							</div>
+							<div class="form-group">
+								<label for="text">Teléfono</label>
+								<input type="text" name="telefono" class="form-control" placeholder="4444-0000">
+							</div>
+							<p id="texto">Por favor llená los campos lo más claro posible y escribí lo que creas necesario en "Consulta". A la brevedad nos contactaremos.</p>
+							<p>Muchas gracias por confiar en nosotros!</p>
+						</form>
+				</div>
+				<div class="col-md-2">
+				</div>
+				<div class="col-md-6">
+					<h3>Características del trabajo</h3>
+						<form>
+							<div class="form-group">
+								<label for="text">Tipo de trabajo</label>
+								<input type="text" name="tipo_de_trabajo" class="form-control" placeholder="folleto">
+							</div>
+							<div class="form-group">
+								<label for="text">Cantidad de ejemplares</label>
+								<input type="text" name="cantidad" class="form-control" placeholder="1000">
+							</div>
+							<div class="form-group">
+								<label for="inputState">Cantidad de colores</label>
+									<div id="cajacolores">
+										<select id="inputState" class="form-control color1">
+											<option selected>1</option>
+											<option>2</option>
+											<option>3</option>
+											<option>4</option>
+										</select>
+										<div>
+											<p class="sobre">/</p>
+										</div>
+										<select id="inputState" class="form-control color2">
+											<option selected>0</option>
+											<option>1</option>
+											<option>2</option>
+											<option>3</option>
+											<option>4</option>
+										</select>
+									</div>	
+							</div>
+							<div class="form-group">
+								<label for="text">Gramaje del papel</label>
+								<input type="text" name="gramaje" class="form-control" placeholder="150 grs">
+							</div>
+							<div class="form-gruop">
+								<label for="consulta">Consulta</label>
+								<textarea class="form-control" rows="3"></textarea>
+							</div>
+							<button id="boton2" type="submit" class="btn btn-primary">Enviar</button>
+						</form>
+				</div>
+			</article>
+			</article>	
+	</section>
+	<footer id="footer1">
+		<section>
+			<article id="map">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.9234697366082!2d-58.53366458519778!3d-34.530166861116314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb0c7f81541bd%3A0x75248d583444ec33!2sMir%C3%B3%20Impresores!5e0!3m2!1ses!2sar!4v1595206469163!5m2!1ses!2sar" width="300" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+			</article>	
+			<article id="direc">
+				<h4>CONTACTO</h4>
+					<ul>
+						<li>Dirección: Presbítero Julián Navarro 5320, Carapachay, Provincia de Buenos Aires.</li>
+						<li>Horario: Lun a Vier de 8 a 17 hs</li>
+						<li>Teléfono: 4766-7674</li>
+						<li>Whatsapp: 11 6943-1700</li>
+						<li>Mail: info@miroimpresores.com</li>
+					</ul>
+			</article>	
+			<article id="red">
+				<h4>REDES</h4>
+					<ul class="redes">
+						<li><a href="https://www.instagram.com/imprentamiroimpresores" target="_blank"><i class="fab fa-instagram fa-lg"></i></a></li>
+						<li><a href="https://www.facebook.com/imprentamiroimpresores" target="_blank"><i class="fab fa-facebook-f fa-lg"></i></a></li>
+					</ul>
+			</article>
+			<p>Miró Impresores® - Todos los derechos reservados</p>
+		</section>	
+	</footer>
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

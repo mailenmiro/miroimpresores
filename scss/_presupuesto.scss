@@ -1,0 +1,49 @@
+/*presupuesto*/
+#presupuesto{
+	background-image: url(../imagenes/presup.jpg);
+}
+
+#presupuesto label{
+	color: #515A5A;
+}
+
+#presupuesto article p{
+	color: #515A5A;
+}
+
+#presupuesto h3{
+	margin-bottom: 20px;
+	font-size: 22px;
+}
+
+#presupuesto #boton2{
+	margin-top: 30px;
+	margin-bottom: 50px;
+}
+
+#presupuesto #texto{
+	padding-top: 40px;
+}
+
+#presupuesto #cajacolores {
+	display: grid;
+	grid-template-columns: 60px 10px 60px;
+	grid-column-gap: 10px;
+	grid-template-areas:
+	"color1 sobre color2";
+}
+
+#presupuesto .color1 {
+	grid-area: color1;
+}
+
+#presupuesto .color2{
+	grid-area: color2;
+}
+
+#presupuesto .sobre{
+	grid-area: sobre;
+	font-size: 25px;
+	align-self: stretch;
+	justify-self: stretch;
+}
