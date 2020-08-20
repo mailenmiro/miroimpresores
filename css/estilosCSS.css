@@ -46,6 +46,8 @@
   height: 550px;
   margin-top: 80px;
   background-image: url(../imagenes/papel.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -390,7 +392,9 @@ body .no-padding {
 
 /*contacto*/
 #contacto {
-  background-image: url(../imagenes/contactos.jpg); }
+  background-image: url(../imagenes/contactos.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%; }
 
 #contacto label {
   color: #515A5A; }
@@ -417,7 +421,9 @@ body .no-padding {
 
 /*presupuesto*/
 #presupuesto {
-  background-image: url(../imagenes/presup.jpg); }
+  background-image: url(../imagenes/presup.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%; }
 
 #presupuesto label {
   color: #515A5A; }

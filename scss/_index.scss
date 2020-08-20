@@ -4,6 +4,8 @@
 	height: 550px;
 	margin-top: 80px;
 	background-image: url(../imagenes/papel.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: column;
