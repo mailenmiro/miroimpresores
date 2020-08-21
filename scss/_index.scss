@@ -62,18 +62,8 @@
 
 }
 
-
-.titulo2{
-	color: #707B7C;
-	font-weight: 400;
-	text-align: center;
-	text-transform: uppercase;
-	padding-top: 30px;
-	margin-top: 20px;
-}
-
 #servicios{
-	height: 570px;
+	height: 600px;
 }
 
 #servicios .cuatro{
@@ -143,11 +133,7 @@
 #productos{
 	background-color: #F2F3F4;
 	padding-bottom: 50px;
-	height: 870px;
-}
-
-#productos img{
-	height: 300px;
+	height: 900px;
 }
 
 #productos .art{
@@ -159,6 +145,48 @@
 	grid-row-gap: 10px;
 	justify-content: center;
 	align-content: center;
+}
+
+#productos article{
+	height: 300px;
+	width: 300px;
+	position: relative;
+}
+
+#productos img{
+	height: 300px;
+	width: 300px;
+}
+
+#productos img:hover{
+	filter: opacity(.5);
+}
+
+#productos article:hover .overlay {
+	display: block;
+}
+
+#productos article .overlay {
+	display: none;
+	position: absolute;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	background-color: rgba(0, 0, 0, 0.5);
+
+	div {
+		position: absolute;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		height: 100%;
+
+		h4 {
+			color: #fff;
+		}	
+	}
 }
 
 #boton2{
