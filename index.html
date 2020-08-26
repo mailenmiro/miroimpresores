@@ -12,131 +12,201 @@
 	<meta name="description" content="Miro Impresores es una empresa dedicada a brindar servicios gráficos">
 </head>
 <body>
-	<header id="header1">
-			<article>
-				<a href="index.html"><img src="imagenes/miro.png" alt="logo_miro"></a>	
-			</article>
-			<article>
-				<nav>
-					<a class="activo" href="index.html">Inicio</a>
-					<a href="empresa.html">Empresa</a>
-					<a href="servicios.html">Servicios</a>
-					<a href="productos.html">Productos</a>
-					<a href="contacto.html">Contacto</a>
-					<a href="presupuesto.html">Presupuesto</a>
-				</nav>
-			</article>	
-	</header>
-	<section id="primeraBajada">
-		<img src="imagenes/mironegro.png" alt="logo_miro">
-		<h2>desde 1990 comprometiéndonos en calidad, tiempo y servicio</h2>
+	<nav class="navbar navbar-expand-lg fixed-top">
+		<div class="container">
+	  	<a class="navbar-brand" href="index.html"><img src="imagenes/miro.png"  class="logo-brand" alt="logo_miro"></a>
+	  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	    	<i class="fas fa-bars"></i>
+	  	</button>
+
+	  	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+	    	<ul class="navbar-nav ml-auto">
+	      		<li class="nav-item">
+	        		<a class="nav-link" href="index.html">Inicio</a>
+	      		</li>
+	     		<li class="nav-item">
+	       			<a class="nav-link" href="empresa.html">Empresa</a>
+	      		</li>
+	      		<li class="nav-item">
+	        		<a class="nav-link" href="servicios.html">Servicios</a>
+	      		</li>
+	     		<li class="nav-item">
+	       			<a class="nav-link" href="productos.html">Productos</a>
+	      		</li>
+	      		<li class="nav-item">
+	        		<a class="nav-link" href="contacto.html">Contacto</a>
+	      		</li>
+	     		<li class="nav-item">
+	       			<a class="nav-link" href="presupuesto.html">Presupuesto</a>
+	      		</li>
+	    	</ul>
+	  	</div>
+	  	</div>
+	</nav>
+	
+	<section id="hero">
+		<div class="container">
+			<div class="content-center" id="topmargin-lg">
+			<h1><img id="logo1" src="imagenes/mironegro.png" alt="logo_miro"></h1>
+			<p id="parrafo1">desde 1990 comprometiéndonos en calidad, tiempo y servicio</p>
+			</div>
+		</div>
+		<div class="container">
+				<div class="row">
+					<div class="col text-center">
+						<a href="empresa.html" type="button" class="btn btn-primary btn-lg">Conocenos</a>
+					</div>
+				</div>
+			</div>
 	</section>
+
 	<section id="servicios">
-		<h1 class="titulo2">Nuestros Servicios</h1>
-		<article class="cuatro">
-			<article>
-				<img src="imagenes/disenook.jpg" alt="diseno">
-				<h3>Diseño Gráfico</h3>
-			</article>
-			<article>
-				<img src="imagenes/offsetok.jpg" alt="offset">
-				<h3>Impresión Offset</h3>
-			</article>
-			<article>
-				<img src="imagenes/digitalok.jpg" alt="digital">
-				<h3>Impresión Digital</h3>
-			</article>
-			<article>
-				<img src="imagenes/plotterok.jpg" alt="plotter">
-				<h3>Gran Formato</h3>
-			</article>
-		</article>
-		<div id="boton1" class="container">
+		<div class="container">
+			<div class="content-center">
+				<h2 class="titulo2">Nuestros Servicios</h2>
+			</div>
+
 			<div class="row">
-				<div class="col text-center">
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-3">
+						<img src="imagenes/disenook.jpg" class="img-fluid" alt="diseño">
+						<div class="text-center">
+							<h3>Diseño Gráfico</h3>
+						</div>
+				</div>
+
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-3">
+						<img src="imagenes/offsetok.jpg" class="img-fluid" alt="offset">
+						<div class="text-center">
+							<h3>Impresión Offset</h3>
+						</div>
+				</div>
+
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-3">
+						<img src="imagenes/digitalok.jpg" class="img-fluid" alt="digital">
+						<div class="text-center">
+							<h3>Impresión Digital</h3>
+						</div>
+				</div>
+
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-3">
+						<img src="imagenes/plotterok.jpg" class="img-fluid" alt="plotter">
+						<div class="text-center">
+							<h3>Gran Formato</h3>
+						</div>
+				</div>
+				<div id="boton" class="col text-center">
 					<a href="servicios.html" type="button" class="btn btn-outline-primary btn-lg">Ver más</a>
+				</div>
+			</div>
+		</div>	
+	</section>
+
+	<section id="productos">
+		<div class="container">
+			<div class="content-center">
+				<h2 class="titulo2">Productos que ofrecemos</h2>
+			</div>
+
+			<div class="row">
+				<div class="col-md-3">
+					<div class="productos-container">
+						<img src="imagenes/bolsa.JPG" class="img-fluid" alt="bolsa">
+							<div class="overlay">
+	                			<div>
+	                    			<h4>Bolsas</h4>
+	                			</div>
+	            			</div>
+            		</div>	
+            	</div>	
+
+				<div class="col-md-3">
+					<div class="productos-container">
+						<img src="imagenes/cajitas.jpg" class="img-fluid" alt="packaging">
+							<div class="overlay">
+	                			<div>
+	                    			<h4>Packaging</h4>
+	                			</div>
+	            			</div>
+	            	</div>		
+            	</div>
+
+            	<div class="col-md-3">
+            		<div class="productos-container">
+						<img src="imagenes/catalogo.jpg" class="img-fluid" alt="catalogo">
+							<div class="overlay">
+	                			<div>
+	                    			<h4>Catalogos</h4>
+	                			</div>
+	            			</div>
+	            	</div>		
+            	</div>
+
+            	<div class="col-md-3">
+            		<div class="productos-container">
+						<img src="imagenes/etiqueta.jpg" class="img-fluid" alt="etiqueta">
+							<div class="overlay">
+	                			<div>
+	                    			<h4>Etiquetas</h4>
+	                			</div>
+	            			</div>
+	            	</div>		
+            	</div>
+
+            	<div class="col-md-3">
+            		<div class="productos-container">
+						<img src="imagenes/flyer.jpg" class="img-fluid" alt="folleto">
+							<div class="overlay">
+	                			<div>
+	                    			<h4>Folletos</h4>
+	                			</div>
+	            			</div>
+	            	</div>		
+            	</div>
+
+            	<div class="col-md-3">
+            		<div class="productos-container">
+						<img src="imagenes/rollup.jpg" class="img-fluid" alt="banner">
+							<div class="overlay">
+	                			<div>
+	                    			<h4>Banners</h4>
+	                			</div>
+	            			</div>
+	            	</div>		
+            	</div>
+
+            	<div class="col-md-3">
+            		<div class="productos-container">
+						<img src="imagenes/estuche.jpg" class="img-fluid" alt="estuche">
+							<div class="overlay">
+	                			<div>
+	                    			<h4>Estuches</h4>
+	                			</div>
+	            			</div>
+	            	</div>		
+            	</div>
+
+            	<div class="col-md-3">
+            		<div class="productos-container">
+						<img src="imagenes/carpeta.jpg" class="img-fluid" alt="carpeta">
+							<div class="overlay">
+	                			<div>
+	                    			<h4>Carpetas</h4>
+	                			</div>
+	            			</div>
+	            	</div>		
+            	</div>
+				<div id="boton" class="col text-center">
+					<a href="productos.html" type="button" class="btn btn-outline-primary btn-lg">Ver todos</a>
 				</div>
 			</div>
 		</div>
 	</section>
-	<section id="productos">
-		<h1 class="titulo2">Productos que ofrecemos</h1>
-			<div class="art">
-				<article>
-					<img src="imagenes/bolsa.JPG" alt="bolsa">
-						<div class="overlay">
-                			<div>
-                    			<h4>Bolsas</h4>
-                			</div>
-            			</div>
-				</article>	
-				<article>	
-					<img src="imagenes/cajitas.jpg" alt="packaging">
-						<div class="overlay">
-                			<div>
-                    			<h4>Packaging</h4>
-                			</div>
-            			</div>
-				</article>
-				<article>	
-					<img src="imagenes/catalogo.jpg" alt="catalogo">
-						<div class="overlay">
-                			<div>
-                    			<h4>Catalogos</h4>
-                			</div>
-            			</div>
-				</article>
-				<article>	
-					<img src="imagenes/etiqueta.jpg" alt="etiqueta">
-						<div class="overlay">
-                			<div>
-                    			<h4>Etiquetas</h4>
-                			</div>
-            			</div>
-				</article>
-				<article>	
-					<img src="imagenes/flyer.jpg" alt="folleto">
-						<div class="overlay">
-                			<div>
-                    			<h4>Folletos</h4>
-                			</div>
-            			</div>
-				</article>
-				<article>	
-					<img src="imagenes/rollup.jpg" alt="banner">
-						<div class="overlay">
-                			<div>
-                    			<h4>Banners</h4>
-                			</div>
-            			</div>
-				</article>
-				<article>	
-					<img src="imagenes/estuche.jpg" alt="estuche">
-						<div class="overlay">
-                			<div>
-                    			<h4>Estuches</h4>
-                			</div>
-            			</div>
-				</article>
-				<article>	
-					<img src="imagenes/carpeta.jpg" alt="carpeta">
-						<div class="overlay">
-                			<div>
-                    			<h4>Carpetas</h4>
-                			</div>
-            			</div>
-				</article>
-			</div>
-			<div id="boton2" class="container">
-				<div class="row">
-					<div class="col text-center">
-						<a href="productos.html" type="button" class="btn btn-outline-primary btn-lg">Ver todos</a>
-					</div>
-				</div>
-			</div>	
-	</section>
+
 	<section id="empresas">	
-		<h1 class="titulo2">Empresas que ya confiaron en nosotros</h1>
+		<div >
+			<div class="content-center">
+				<h2 class="titulo2">Ya confiaron en nosotros...</h2>
+			</div>
 			<div id="demo" class="carousel slide" data-ride="carousel">
 				<div class="container carousel-inner no-padding">
 					<div class="carousel-item active">
@@ -169,13 +239,15 @@
 					</div>
 				</div>
 				<a class="carousel-control-prev" href="#demo" data-slide="prev">
-					<span class="carousel-control-prev-icon"></span>
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 				</a>
 				<a class="carousel-control-next" href="#demo" data-slide="next">
-					<span class="carousel-control-next-icon"></span>
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
 				</a>
 			</div>
-	</section>		
+		</div>	
+	</section>
+
 	<footer id="footer1">
 		<section>
 			<article id="map">

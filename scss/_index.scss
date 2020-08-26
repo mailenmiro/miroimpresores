@@ -1,172 +1,78 @@
 /*index*/
-#primeraBajada{
-	width: 100%;
-	height: 550px;
-	margin-top: 80px;
+#hero{
 	background-image: url(../imagenes/papel.jpg);
 	background-repeat: no-repeat;
-	background-size: 100%;
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+	background-size: cover;
+	padding-top: 90px;
+	min-height: 700px;
+	color: black;
 }
 
-#primeraBajada img{
+.content-center{
+	max-width: 800px;
+	margin: 0 auto 60px auto;
+	text-align: center;
+}
+
+#logo1{
 	width: 400px;
 	animation: slideInUp;
  	animation-duration: 1s;
+ 	color: #0000CC;
 }
 
-#primeraBajada h2{
-	padding-top: 30px;
-	width: 500px;
-	text-align: center;
-	font-weight: 400;
-	font-size: 26px;
+#parrafo1{
+	font-size: 22px;
 	line-height: 1.4;
 	animation: slideInUp;
  	animation-duration: 1s;
+ 	margin-bottom: 0;
+ 	padding-top: 20px;
 }
 
-@media only screen and (max-width: 576px){
-	#primeraBajada{
-	width: 100%;
-	height: 320px;
-	margin-top: 80px;
-	background-image: url(../imagenes/papel.jpg);
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	}
 
-	#primeraBajada img{
-		width: 200px;
-		animation: slideInUp;
-	 	animation-duration: 1s;
-	}
-
-	#primeraBajada h2{
-		padding-top: 30px;
-		width: 300px;
-		text-align: center;
-		font-weight: 400;
-		font-size: 16px;
-		line-height: 1.6;
-		animation: slideInUp;
-	 	animation-duration: 1s;
-	}
-
+.titulo2{
+	font-size: 36px;
+	color: #707B7C;
+	font-weight: 300;
+	text-transform: uppercase;
+	margin-bottom: 30px;
 }
 
-#servicios{
-	height: 600px;
+.titulo2::after{
+	display: block;
+	content:'';
+	position: relative;
+	width: 120px;
+	height: 1px;
+	background-color: #43afec;
+	margin: 15px auto 20px;
 }
 
-#servicios .cuatro{
-	padding-top: 30px;
-	display: grid;
-	grid-template-columns: 300px 300px 300px 300px;
-	grid-template-rows: 300px;
-	grid-column-gap: 10px;
-	grid-row-gap: 10px;
-	justify-content: center;
-	align-content: center;
-}
 
 #servicios h3{
-	text-align: center;
 	font-size: 20px;
-	padding-top: 8px;
-	padding-bottom: 30px;
+	margin-top: 8px;
 }
 
-#servicios img{
-	height: 300px;
+#boton{
+	margin-top: 50px;
 }
-
-#boton1{
-	margin-top: 70px;
-	margin-bottom: 50px;
-}
-
-@media only screen and (max-width: 576px){
-	.titulo2{
-		font-size: 20px;
-	}
-
-	#servicios{
-		height: 620px;
-	}
-
-	#servicios img{
-		height: 140px;
-	}
-
-	#servicios .cuatro{
-		padding-top: 30px;
-		display: grid;
-		grid-template-columns: 140px 140px;
-		grid-template-rows: 200px 200px;
-		grid-column-gap: 5px;
-		grid-row-gap: 5px;
-		justify-content: center;
-		align-content: center;
-	}
-
-	#servicios h3{
-		text-align: center;
-		font-size: 16px;
-		padding-top: 5px;
-		padding-bottom: 20px;
-	}
-
-	#boton1{
-		margin-top: 40px;
-	}
-}
-
 
 #productos{
 	background-color: #F2F3F4;
-	padding-bottom: 50px;
-	height: 900px;
 }
 
-#productos .art{
-	padding-top: 30px;
-	display: grid;
-	grid-template-columns: 300px 300px 300px 300px;
-	grid-template-rows: 300px;
-	grid-column-gap: 10px;
-	grid-row-gap: 10px;
-	justify-content: center;
-	align-content: center;
-}
-
-#productos article{
-	height: 300px;
-	width: 300px;
+.productos-container{
 	position: relative;
+	margin: 15px 0;
 }
 
-#productos img{
-	height: 300px;
-	width: 300px;
-}
-
-#productos img:hover{
-	filter: opacity(.5);
-}
-
-#productos article:hover .overlay {
+.productos-container:hover .overlay {
 	display: block;
 }
 
-#productos article .overlay {
+.overlay {
 	display: none;
 	position: absolute;
 	top: 0px;
@@ -189,36 +95,8 @@
 	}
 }
 
-#boton2{
-	margin-top: 50px;
-	margin-bottom: 50px;
-}
-
-@media only screen and (max-width: 576px){
-	#productos{
-		height: 830px;
-	}
-
-	#productos img{
-		height: 140px;
-	}
-
-	#productos .art{
-		padding-top: 30px;
-		display: grid;
-		grid-template-columns: 140px 140px;
-		grid-template-rows: 140px 140px 140px 140px;
-		grid-column-gap: 5px;
-		grid-row-gap: 5px;
-		justify-content: center;
-		align-content: center;
-	}
-}
-
 
 #demo{
-	padding-top: 30px;
-	padding-bottom: 50px;
 	text-align: center;
 }
 
@@ -239,4 +117,20 @@ body .carousel-control-next-icon{
 body .no-padding{
   padding-left: 0;
   padding-right: 0;
+}
+
+
+
+@media (max-width: 575.98px) {
+	#logo1{
+	width: 200px;
+	}
+
+	#parrafo1{
+	font-size: 20px;
+	}
+
+	.titulo2{
+		font-size: 26px;
+	}
 }
