@@ -49,10 +49,21 @@
 	margin: 15px auto 20px;
 }
 
-
 #servicios h3{
 	font-size: 20px;
 	margin-top: 8px;
+}
+
+#selecc h3{
+	-moz-transition: all 0.8s;
+	-webkit-transition: all 0.8s;
+	transition: all 0.8s;
+}
+
+#selecc:hover h3 {
+	-moz-transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	transform: scale (1.2);
 }
 
 #boton{
@@ -132,5 +143,9 @@ body .no-padding{
 
 	.titulo2{
 		font-size: 26px;
+	}
+
+	#selecc h3{
+		margin-bottom: 50px;
 	}
 }

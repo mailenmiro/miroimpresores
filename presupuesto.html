@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css"/>
 </head>
 <body>
-	<nav class="navbar navbar-expand-lg">
+	<nav class="navbar navbar-expand-lg fixed-top">
 		<div class="container">
 	  	<a class="navbar-brand" href="index.html"><img src="imagenes/miro.png"  class="logo-brand" alt="logo_miro"></a>
 	  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,102 +42,134 @@
 	  	</div>
 	</nav>
 	
-	<section id="presupuesto">
-		<h2 id="tituloPaginas">Pedinos tu presupuesto</h2>
-			<article class="container">
-			<article class="row">
-				<div class="col-md-4">
-					<h3>Datos Personales</h3>
-						<form>
+	<section id="pag-presupuesto">
+		<div class="container">
+			<div class="content-center">
+				<h2 class="titulo2">Pedinos tu presupuesto</h2>
+			</div>
+			<div class="row">
+				<div id="topmargin-sm" class="col-xs-6 col-sm-6 col-md-6">
+					<div class="row">
+						<div class="col-md-12">
+							<h3>Datos Personales</h3>
+						</div>
+						<div class="col-md-6">
 							<div class="form-group">
-								<label for="text">Nombre Completo</label>
-								<input type="text" name="nombre" class="form-control" placeholder="Nombre Apellido">
+								<label id="casillero" for="text">Nombre</label>
+								<input type="text" name="nombre" class="form-control" placeholder="Nombre">
 							</div>
+						</div>
+						<div class="col-md-6">
 							<div class="form-group">
-								<label for="exampleInputEmail1">Email</label>
-								<input type="email" name="ejemplo_mail" class="form-control" aria-describedby="emailHelp" placeholder="nombre@gmail.com">
+								<label id="casillero" for="text">Apellido</label>
+								<input type="text" name="apellido" class="form-control" placeholder="Apellido">
 							</div>
-							<div class="form-group">
-								<label for="text">Teléfono</label>
+						</div>
+						<div class="col-md-12">
+							<form class="form-group">
+								<label id="casillero" for="text">Mail</label>
+								<input type="email" name="mail" class="form-control" aria-describedby="emailHelp" placeholder="nombre@gmail.com">
+							</form>
+						</div>
+						<div class="col-md-12">
+							<form class="form-group">
+								<label id="casillero" for="text">Teléfono</label>
 								<input type="text" name="telefono" class="form-control" placeholder="4444-0000">
-							</div>
-							<p id="texto">Por favor llená los campos lo más claro posible y escribí lo que creas necesario en "Consulta". A la brevedad nos contactaremos.</p>
-							<p>Muchas gracias por confiar en nosotros!</p>
-						</form>
+							</form>
+						</div>
+						<div class="col-md-12">
+							<p id="texto">Por favor llená los campos lo más claro posible, nos contactaremos a la brevedad.</p>
+							<p>¡Muchas gracias por confiar en nosotros!</p>
+						</div>
+					</div>
 				</div>
-				<div class="col-md-2">
-				</div>
-				<div class="col-md-6">
-					<h3>Características del trabajo</h3>
-						<form>
-							<div class="form-group">
-								<label for="text">Tipo de trabajo</label>
-								<input type="text" name="tipo_de_trabajo" class="form-control" placeholder="folleto">
-							</div>
-							<div class="form-group">
-								<label for="text">Cantidad de ejemplares</label>
+				<div id="topmargin-sm" class="col-xs-6 col-sm-6 col-md-6">
+					<div class="row">
+						<div class="col-md-12">
+							<h3>Características del trabajo</h3>
+						</div>
+						<div class="col-md-12">
+							<form class="form-group">
+								<label id="casillero" for="text">Tipo de trabajo</label>
+								<input type="text" name="tipo_de_trabajo" class="form-control" placeholder="folletos">
+							</form>
+						</div>
+						<div class="col-md-6">
+							<form class="form-group">
+								<label id="casillero" for="text">Cantidad de ejemplares</label>
 								<input type="text" name="cantidad" class="form-control" placeholder="1000">
-							</div>
-							<div class="form-group">
-								<label for="inputState">Cantidad de colores</label>
-									<div id="cajacolores">
-										<select id="inputState" class="form-control color1">
-											<option selected>1</option>
-											<option>2</option>
-											<option>3</option>
-											<option>4</option>
-										</select>
-										<div>
-											<p class="sobre">/</p>
-										</div>
-										<select id="inputState" class="form-control color2">
-											<option selected>0</option>
-											<option>1</option>
-											<option>2</option>
-											<option>3</option>
-											<option>4</option>
-										</select>
-									</div>	
-							</div>
-							<div class="form-group">
-								<label for="text">Gramaje del papel</label>
+							</form>
+						</div>
+						<div class="col-md-6">
+							<form class="form-group">
+								<label id="casillero" for="text">Medida</label>
+								<input type="text" name="medida" class="form-control" placeholder="10x15 cm">
+							</form>
+						</div>
+						<div class="col-md-6">
+							<form class="form-group">
+								<label id="casillero" for="text">Cantidad de colores</label>
+								<input type="text" name="cantidad" class="form-control" placeholder="4/0">
+							</form>
+						</div>
+						<div class="col-md-6">
+							<form class="form-group">
+								<label id="casillero" for="text">Gramaje del papel</label>
 								<input type="text" name="gramaje" class="form-control" placeholder="150 grs">
-							</div>
-							<div class="form-gruop">
-								<label for="consulta">Consulta</label>
-								<textarea class="form-control" rows="3"></textarea>
-							</div>
-							<button id="boton2" type="submit" class="btn btn-primary">Enviar</button>
-						</form>
+							</form>
+						</div>
+						<div class="col-md-12">
+							<form class="form-group">
+								<label id="casillero" for="exampleFormControlFile1">Seleccionar archivo</label>
+								<input type="file" class="form-control-file" id="exampleFormControlFile1">
+							</form>
+						</div>
+						<div class="col-md-12">
+							<form class="form-group">
+								<label id="casillero" for="text">Consulta</label>
+								<textarea class="form-control" rows="6" placeholder="Mensaje"></textarea>
+							</form>
+						</div>
+						<div class="col-md-12">
+							<a href="" class="btn btn-primary full-width">Enviar</a>
+						</div>
+					</div>
 				</div>
-			</article>
-			</article>	
+			</div>
+		</div>
 	</section>
-	<footer id="footer1">
-		<section>
-			<article id="map">
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.9234697366082!2d-58.53366458519778!3d-34.530166861116314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb0c7f81541bd%3A0x75248d583444ec33!2sMir%C3%B3%20Impresores!5e0!3m2!1ses!2sar!4v1595206469163!5m2!1ses!2sar" width="300" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-			</article>	
-			<article id="direc">
-				<h4>CONTACTO</h4>
-					<ul>
-						<li>Dirección: Presbítero Julián Navarro 5320, Carapachay, Provincia de Buenos Aires.</li>
-						<li>Horario: Lun a Vier de 8 a 17 hs</li>
-						<li>Teléfono: 4766-7674</li>
-						<li>Whatsapp: 11 6943-1700</li>
-						<li>Mail: info@miroimpresores.com</li>
-					</ul>
-			</article>	
-			<article id="red">
-				<h4>REDES</h4>
-					<ul class="redes">
-						<li><a href="https://www.instagram.com/imprentamiroimpresores" target="_blank"><i class="fab fa-instagram fa-lg"></i></a></li>
-						<li><a href="https://www.facebook.com/imprentamiroimpresores" target="_blank"><i class="fab fa-facebook-f fa-lg"></i></a></li>
-					</ul>
-			</article>
-			<p>Miró Impresores® - Todos los derechos reservados</p>
-		</section>	
-	</footer>
+	
+	<section id="foooter">
+		<div class="container">
+			<img src="imagenes/miro.png"  class="logo-brand logo-pad" alt="logo_miro">
+			<ul class="list-inline">
+				<li class="list-inline-item footer-menu">
+					<a href="index.html">Inicio</a>
+				</li>	
+				<li class="list-inline-item footer-menu">	
+					<a href="empresa.html">Empresa</a>
+				</li>	
+				<li class="list-inline-item footer-menu">	
+	        		<a href="servicios.html">Servicios</a>
+	        	</li>	
+	        	<li class="list-inline-item footer-menu">	
+	       			<a href="productos.html">Productos</a>
+	       		</li>	
+	       		<li class="list-inline-item footer-menu">	
+	        		<a href="contacto.html">Contacto</a>
+	        	</li>	
+	        	<li class="list-inline-item footer-menu">	
+	       			<a href="presupuesto.html">Presupuesto</a>
+				</li>
+			</ul>
+			<ul class="list-inline">
+				<li class="list-inline-item"><a href="https://www.instagram.com/imprentamiroimpresores" target="_blank"><i class="fab fa-instagram fa-lg"></i></a></li>
+				<li class="list-inline-item"><a href="https://www.facebook.com/imprentamiroimpresores" target="_blank"><i class="fab fa-facebook-f fa-lg"></i></a></li>
+				<li class="list-inline-item"><a href="https://wa.link/wd87h4" target="_blank"><i class="fab fa-whatsapp  fa-lg"></i></i></a></li>
+			</ul>
+			<small>Miró Impresores® - Todos los derechos reservados</small>
+		</div>
+	</section>
 	<script src="js/jquery.js"></script>
 	<script src="js/bootstrap.bundle.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
