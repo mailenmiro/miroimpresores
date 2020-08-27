@@ -17,17 +17,17 @@
 #logo1{
 	width: 400px;
 	animation: slideInUp;
- 	animation-duration: 1s;
- 	color: #0000CC;
+	animation-duration: 1s;
+	color: #0000CC;
 }
 
 #parrafo1{
 	font-size: 22px;
 	line-height: 1.4;
 	animation: slideInUp;
- 	animation-duration: 1s;
- 	margin-bottom: 0;
- 	padding-top: 20px;
+	animation-duration: 1s;
+	margin-bottom: 0;
+	padding-top: 20px;
 }
 
 
@@ -106,28 +106,27 @@
 	}
 }
 
-
 #demo{
 	text-align: center;
 }
 
 .col-md-3{
-  display: inline-block;
-  margin-left:-4px;
+	display: inline-block;
+	margin-left:-4px;
 }
 
 body .carousel-indicators li{
-  background-color:black;
+	background-color:black;
 }
 
 body .carousel-control-prev-icon,
 body .carousel-control-next-icon{
-  background-color:black;
+	background-color:black;
 }
 
 body .no-padding{
-  padding-left: 0;
-  padding-right: 0;
+	padding-left: 0;
+	padding-right: 0;
 }
 
 
